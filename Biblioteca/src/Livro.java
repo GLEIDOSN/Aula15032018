@@ -7,6 +7,13 @@ public class Livro {
 	private String resumo;
 	private double preco;
 	private Autor autor;
+	public boolean aplicaDescontoDe(double porcentagem){
+		if (porcentagem > 0.2){
+			return false;
+		}
+		this.preco -=this.preco * porcentagem;
+		return true;
+	}
 
 	public Autor getAutor() {
 		return autor;

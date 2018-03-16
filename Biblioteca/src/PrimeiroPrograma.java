@@ -4,7 +4,13 @@ public class PrimeiroPrograma {
 		double valor2 = 20.90;
 		double soma = valor1 + valor2;
 		System.out.println("A soma dos valores é: " + soma);
+		
 		Autor autor1  = new Autor();
+		Autor autor2 = new Autor();
+		
+		Ebook ebook = new Ebook(autor2);
+		ebook.setTitulo("Engenharia de Software");
+		
 		autor1.setNome("Gleidson Freitas");
 		autor1.setEmail("Gleidson Freitas");
 		autor1.setCpf("03745882657");
